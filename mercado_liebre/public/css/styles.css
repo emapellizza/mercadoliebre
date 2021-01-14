@@ -1,5 +1,5 @@
 *{
-    margin: 0px;
+    margin: 1px;
     padding: 0px;
     box-sizing: border-box;
 }
@@ -50,7 +50,7 @@ h3{
 
 header{
     background-color: #EAC926;
-   
+    
 }
 
 header img,
@@ -167,4 +167,21 @@ footer i{
 
 .register input[type='reset']:hover{
     background-color: #CC1155;
+}
+
+/*movile*/
+@media (max-width: 361px){
+    
+.nav-registro{
+    position: relative;
+    left: 0px;
+}
+.barra-buscar{
+    width: 100%;
+}
+}
+/*desktop*/
+@media (min-width: 769px){
+    
+
 }
