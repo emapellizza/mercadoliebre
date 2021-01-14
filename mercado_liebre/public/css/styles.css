@@ -170,7 +170,7 @@ footer i{
 }
 
 /*movile*/
-@media (max-width: 361px){
+@media (max-width: 375px){
     
 .nav-registro{
     position: relative;
