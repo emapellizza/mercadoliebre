@@ -211,11 +211,20 @@ footer p{
 }
 
 /*movile*/
-@media (max-width: 415px){
+@media (max-width: 361px){
+    header p{
+        display: block;
+        padding: 5px;
+        font-size: 15px;
+    }
     
 .nav-registro{
+    display: none;
     position: relative;
     left: 0px;
+}
+.nav-secciones{
+    display: none;
 }
 .barra-buscar{
     width: 100%;
