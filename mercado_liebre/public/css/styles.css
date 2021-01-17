@@ -211,7 +211,7 @@ footer p{
 }
 
 /*movile*/
-@media (max-width: 361px){
+@media (max-width: 414px){
     header p{
         display: block;
         padding: 5px;
