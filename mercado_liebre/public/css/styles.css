@@ -1,5 +1,5 @@
 *{
-    margin: 1px;
+    margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
@@ -9,6 +9,8 @@ body{
     background-color: #ebebeb;
 }
 
+
+/******************   Header   *****************/
 div.burger-menu{
     text-align: center;
 }
@@ -29,19 +31,28 @@ div.burger-menu i:hover{
     background-color: #0022AA;
 }
 
-.nav-registro{
-    position: absolute;
-    top: 5px;
-    left: 950px;
 
-}
-
-.nav-secciones{
+.nav-secciones a{
+    display: inline;
+    padding: 5px;
+    
     
 }
 
-p{
+.nav-registro {
+    position: absolute;
+    top: 5px;
+    left: 950px;
+    
+}
+
+
+
+header p{
+    display: inline;
     font-size: 12px;
+    padding: 5px;
+    font-size: 15px;
 }
 
 h3{
@@ -53,23 +64,35 @@ header{
     
 }
 
-header img,
-header form{
+header img{
     width: 50%;
 }
-
-header ul li{
-    list-style-type: none;
-   
+header form{
+    display: inline;
+    padding: 5px;
 }
 
-header ul li a{
-    text-decoration: none;
-    color: #000;
+
+h3{
+    color: #666666;
+}
+
+
+section.banner img{
+    width: 100%;
+    display: block;
+}
+
+
+/******************   main   ****************************/
+main{
+    width: 90%;
+    margin: 0 auto;
 }
 
 .price{
     font-size: 18px;
+    flex-direction: row;
 }
 
 .discount,
@@ -78,34 +101,40 @@ header ul li a{
     font-weight: normal;
 }
 
-h3,
-.description{
-    color: #666;
-}
+main section article h4{
+    transition: all .5s ease-in;
+   }
+   
+   
+   
+   main section article h4{
+       margin-top:0;
+       height: 0px;
+       overflow: hidden;
+   }
+   
+   main section article:hover h4{
+       height: 50px;
+       overflow: auto;
+       margin-top: 20px;
+   }
 
-section.banner img{
-    width: 100%;
-    display: block;
-}
-
-main{
-    width: 90%;
-    margin: 0 auto;
-}
 
 main section h3{
     margin: 20px 0px;
 }
 
 main section article{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
     background-color: #fff;
     margin: 10px 0px;
     padding: 15px;
 }
 
 main section article img{
-    display: block;
+    display: inline-block;
     width: 100%;
+    
 }
 
 main section article i,
@@ -120,9 +149,15 @@ main section article i{
     width: 30px;
     height: 30px;
     border: 1px solid #39b54a;
+    background-color: #FFF;
     border-radius: 50%;
+    position: relative;
+    left: 20px;
+    top: -15px;
 }
 
+
+/******************   Footer   *****************/
 footer{
     background-color: #fff;
     color: #666;
@@ -131,10 +166,16 @@ footer{
 
 footer article{
     margin: 20px 0px;
+    display: table-cell;
+    text-align-last: center;
 }
 
 footer i{
     color: #1259c3;
+}
+
+footer p{
+    padding: 5px;
 }
 
 /* propio de los formularios */
@@ -179,9 +220,30 @@ footer i{
 .barra-buscar{
     width: 100%;
 }
+footer article{
+    display: block;
 }
-/*desktop*/
-@media (min-width: 769px){
+}
+/*tablet*/
+@media (max-width: 769px){
     
+    main section article {
+        display: inline-block;
+        width: 45%;
+        
+    }
+    .nav-registro{
+        position: relative;
+        left: 0px;
+    }
+    .barra-buscar{
+        width: 100%;
+    }
+
+    footer article{
+        display: block;
+    }
+  
+
 
 }
